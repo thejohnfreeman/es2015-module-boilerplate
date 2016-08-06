@@ -1,0 +1,26 @@
+{
+  "name": "es2015-module",
+  "version": "0.0.1",
+  "description": "Boilerplate for an ES2015 module, ready to run in a browser or in Node, with tests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "example.com"
+  },
+  "author": "John Freeman jfreeman08@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.13.2",
+    "chai": "^3.5.0",
+    "mocha": "^3.0.1",
+    "mocha-loader": "^0.7.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
