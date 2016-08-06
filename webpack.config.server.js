@@ -4,8 +4,8 @@ var os = require('os')
 
 module.exports = Object.assign(require('./webpack.config.js'), {
   entry: {
-    'es2015-module': './src/index.js',
-    'es2015-module-tests': 'mocha!./test/test.js',
+    'module': './src/index.js',
+    'tests': 'mocha!./test/test.js',
   },
   output: {
     library: 'module',
