@@ -1,13 +1,9 @@
-var fs = require('fs')
-var path = require('path')
-var os = require('os')
-
 module.exports = {
   entry: {
-    'es2015-module': ['./src/index.js'],
-    'es2015-module-tests': 'mocha!./test/test.js',
+    'es2015-module': './src/index.js',
   },
   output: {
+    libraryTarget: 'commonjs2',
     path: './dist',
     filename: '[name].js',
   },
@@ -19,10 +15,4 @@ module.exports = {
       query: {presets: ['es2015']},
     }],
   },
-  devServer: {
-    host: os.hostname(),
-    https: true,
-    cert: fs.readFileSync(path.join(os.homedir(), '/certs/server.crt')),
-    key: fs.readFileSync(path.join(os.homedir(), '/certs/server.key')),
-  }
 }
