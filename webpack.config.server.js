@@ -12,6 +12,7 @@ module.exports = Object.assign(require('./webpack.config.js'), {
     libraryTarget: 'this',
     filename: '[name].js',
   },
+  devtool: 'source-map',
   devServer: {
     host: os.hostname(),
     https: true,
