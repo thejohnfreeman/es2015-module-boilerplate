@@ -4,7 +4,7 @@
   "description": "Boilerplate for an ES2015 module, ready to run in a browser or in Node, with tests.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "standard && mocha",
     "build": "webpack",
     "start": "webpack-dev-server --config webpack.config.server.js --inline"
   },
@@ -19,5 +19,8 @@
     "mocha-loader": "^0.7.1",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "standard": "^8.6.0"
   }
 }

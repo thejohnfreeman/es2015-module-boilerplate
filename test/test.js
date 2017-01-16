@@ -1,7 +1,9 @@
-var should = require('chai').should()
+/* eslint-env mocha */
 
-describe('greeting', function() {
-  it('should say hello world!', function() {
+require('chai').should()
+
+describe('greeting', function () {
+  it('should say hello world!', function () {
     var greeting = require('../src/index.js')
     greeting().should.equal('hello world!')
   })
